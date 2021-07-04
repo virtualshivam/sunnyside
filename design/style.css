@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&family=Fraunces:wght@700;900&display=swap');
+
+
+:root{
+    --barlow:'Barlow', sans-serif;
+    --fraunces:'Fraunces', serif;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav.nav{
+    background-image: url('../images/desktop/image-header.jpg');
+    background-size: 100% 100%;
+    padding: 1.8em 2em;
+}
+
+.nav .menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .menu .logo a{
+    font-size: 1.8rem;
+    font-family: var(--fraunces);
+    padding-top: 1em;
+    color: white;
+}
+
+.nav .menu .menu-links{
+    display: flex;
+}
+
+.nav .menu .menu-links .link-item{
+    color: white;
+    font-family: var(--barlow);
+    margin: 0 1.6em;
+    padding: 1em 2em;
+    font-weight: lighter;
+}
+
+.nav .menu .menu-links .link-item:last-child{
+    text-transform: uppercase;
+    color: hsl(198, 62%, 26%);
+    background-color: white;
+    border-radius: 1.8em;
+    font-family: var(--fraunces);
+}
+
+.menu ~ h1{
+    text-align: center;
+    color: white;
+    font-family: var(--fraunces);
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+}
+
+.nav .arrow-div{
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 12em;
+}
+
+main article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+main article .image-div >img{
+    width: 100%;
+    display: block;
+}
+
+main article .content-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 8em;
+}
+
+main article .content-div h1{
+    font-family: var(--fraunces);
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+    font-size: 2.8rem;
+    margin-bottom: 0.5em !important;
+}
+
+main article .content-div p{
+    font-family: var(--barlow);
+    line-height: 1.7rem;
+    color: hsl(210, 4%, 67%);
+}
+
+main article .content-div a{
+    margin-top: .8em;
+    font-family: var(--fraunces);
+    text-transform: uppercase;
+    text-decoration: underline hsl(51, 100%, 49%);
+    font-weight: 700;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.08rem;
+    color: hsl(212, 27%, 19%);
+}
+
+main article:nth-child(2) .content-div{order:2}
+main article:nth-child(2) .content-div a{text-decoration: underline hsl(7, 99%, 70%);}
+main article:nth-child(2) .image-div{order:1}
+
+main article .only-image-article{
+    background-size:cover;
+}
+
+main article .image-2{
+    background-image: url('../images/desktop/image-photography.jpg');
+}
+main article .image-1{
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+}
+
+main article .only-image-article{
+    text-align: center;
+    padding: 2.5em 12em;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+main article .only-image-article h3{
+    font-family: var(--fraunces);
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+}
+
+main article .only-image-article p{
+    font-family: var(--barlow);
+}
+
+main article .image-1 h3,main article .image-1 p{color: hsl(167, 40%, 24%);}
+main article .image-2 h3, main article .image-2 p{color: hsl(198, 62%, 26%);}
+
+.testimonial-section{
+    padding: 7em 0 8em 0;
+}
+
+.testimonial-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fraunces);
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+    word-spacing: 0.3rem;
+    font-size: 1.5rem;
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 2.5em;
+}
+
+.testimonial-section .testimonials{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonial-section .testimonials .card{
+    padding: 0 5.3em;
+}
+.testimonial-section .testimonials .card .profile-img img{
+    border-radius: 50%;
+}
+
+.testimonial-section .testimonials .card  .about{
+    color: hsl(213, 9%, 39%);
+    font-family: var(--barlow);
+    margin-bottom: 4em;
+}
+
+.testimonial-section .testimonials .card .name{
+    font-family: var(--fraunces);
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+
+.testimonial-section .testimonials .card .designation{
+    font-family: var(--barlow);
+    color: hsl(232, 10%, 55%);
+}
+
+main section.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+main section.image-gallery img{
+    width: 100%;
+}
+
+footer.footer{
+    background-color:  #b2ebf2;
+    color: hsl(168, 34%, 41%);
+    text-align: center;
+    padding: 3em;
+}
+
+footer.footer h1{
+    font-family: var(--barlow);
+    font-weight: 900;
+}
+
+footer.footer span{
+    margin: 2em 3em 4em;
+    display: inline-block;
+    font-family: var(--barlow);
+}
+
+footer.footer .fab{
+    margin: 0 1.3em;
+    cursor: pointer;
+}
